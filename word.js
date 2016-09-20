@@ -3,7 +3,7 @@ var Letter = require('./Letter.js');
 var Word = function(wrd) {
   this.word = wrd;
   this.lets = [];
-  thi.found = false;
+  this.found = false;
 
   this.getLets = function() {
     for (var i = 0; i < this.word.length; i++) {
@@ -13,7 +13,7 @@ var Word = function(wrd) {
 
   this.didWeFindTheWord = function() {
     this.found = this.lets.every(function(curLet) {
-      return. curLet.appear;
+      return curLet.appear;
     });
 
     return this.found;
